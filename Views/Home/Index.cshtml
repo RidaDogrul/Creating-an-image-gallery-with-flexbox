@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        body{
+            margin:0;
+        }
+        .header{
+            text-align:center;
+            padding:40px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 5px;
+        }
+
+        .column {
+            flex: 25%;
+            flex-wrap: wrap;
+            max-width:25%;
+            padding:0 5px;
+        }
+
+        .column img{
+
+            margin-top:6px;
+            width:100%;
+            vertical-align:middle;
+        }
+
+        @@media screen and (max-width:800px)
+        {
+            .column{
+                flex:50%;
+                max-width:100%;
+            }
+
+        }
+        @@media screen and (max-width:600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+                                 
+    </style>
+  
+</head>
+<body>
+
+    <div class="header">
+        <h1>Image Gallery with Flexbox</h1>
+        <p>
+            Let's see the power of flexbox
+        </p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="~/img/resimler/balon.jpg" />
+            <img src="~/img/resimler/hall.jpg" />
+            <img src="~/img/resimler/400-400x600.jpg" />
+        </div>
+
+        <div class="column">
+            <img src="~/img/resimler/deniz.jpg" /
+            <img src="~/img/resimler/kampci.jpg" />>
+            <img src="~/img/resimler/4-400x600.jpg" />
+            <img src="~/img/resimler/983-400x600.jpg" />
+        </div>
+
+        <div class="column">
+            <img src="~/img/resimler/dağ.jpg" />
+            <img src="~/img/resimler/kuş.jpg" />
+            <img src="~/img/resimler/386-400x600.jpg" />
+            <img src="~/img/resimler/660-400x600.jpg" />
+        </div>
+
+        <div class="column">
+            <img src="~/img/resimler/denizanası.jpg" />
+            <img src="~/img/resimler/61-400x600.jpg" />
+            <img src="~/img/resimler/366-400x600.jpg" />
+        </div>
+
+    </div>
+    
+</body>
+</html>
